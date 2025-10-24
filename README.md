@@ -102,7 +102,7 @@ arousal-integration-validation/
 ### Installation
 
 ```bash
-cd /home/ty/Repositories/ai_workspace/arousal-integration-validation
+cd /arousal-integration-validation
 
 # Create virtual environment
 uv venv
