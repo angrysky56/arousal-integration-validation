@@ -1,7 +1,7 @@
 # Arousal Integration Validation - Tier 1
 
-**Status**: ✅ Phase 0 Complete - Environment Validated  
-**Next**: Phase 1 - Baseline Agent Implementation  
+**Status**: ✅ Phase 0 Complete - Environment Validated
+**Next**: Phase 1 - Baseline Agent Implementation
 **Timeline**: 2-3 weeks to Tier 1 decision
 
 ---
@@ -11,8 +11,13 @@
 This project tests whether **arousal-weighted integration of domain-specific modules** outperforms monolithic architectures in reinforcement learning. The work synthesizes three neuroscientific frameworks:
 
 1. **DMN Modularity** (Yazin et al., 2025) - Brain fragments experience into State/Agent/Action domains
-2. **PVT Arousal Modulation** (Your validated work, 2025) - Arousal modulates learning based on prediction errors
+https://www.nature.com/articles/s41467-025-63522-y
+
+2. **PVT Arousal Modulation** (me, 2025) - Arousal modulates learning based on prediction errors
+https://github.com/angrysky56/pvt-inspired-ai
+
 3. **Temporal Coding Theory** (Baker & Cariani, 2025) - [Future work: temporal binding mechanisms]
+https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2025.1540532/full
 
 ### Central Hypothesis
 
@@ -119,8 +124,8 @@ python tests/test_environment.py
 
 ### Documentation
 
-**Start here**: `docs/QUICK_START.md` (15 minutes)  
-**Deep dive**: `docs/THEORETICAL_FOUNDATIONS.md` (1-2 hours)  
+**Start here**: `docs/QUICK_START.md` (15 minutes)
+**Deep dive**: `docs/THEORETICAL_FOUNDATIONS.md` (1-2 hours)
 **Design rationale**: `docs/ARCHITECTURAL_RATIONALE.md` (45 minutes)
 
 ---
@@ -205,30 +210,30 @@ python tests/test_environment.py
 
 ### Must Pass All (C1-C4)
 
-**C1: Convergence Speed**  
+**C1: Convergence Speed**
 Architecture C converges >10% faster than A and B (p < 0.05)
 
-**C2: Performance Parity**  
+**C2: Performance Parity**
 Final reward within 5% of baseline
 
-**C3: Arousal Efficiency**  
+**C3: Arousal Efficiency**
 Arousal conflicts <20% of timesteps
 
-**C4: Computational Feasibility**  
+**C4: Computational Feasibility**
 Training time <2x baseline, inference <100ms
 
 ### Abort If Any (F1-F4)
 
-**F1: No Convergence Benefit**  
+**F1: No Convergence Benefit**
 No significant improvement (p > 0.05)
 
-**F2: Performance Degradation**  
+**F2: Performance Degradation**
 >5% worse than baseline
 
-**F3: Instability**  
+**F3: Instability**
 Variance >2x baseline
 
-**F4: Impractical Overhead**  
+**F4: Impractical Overhead**
 Training time >3x baseline
 
 ---
@@ -294,24 +299,24 @@ where:
 
 ### Primary Metrics (Direct Hypothesis Tests)
 
-**M1: Convergence Speed**  
+**M1: Convergence Speed**
 Episodes to reach 95% of max performance
 
-**M2: Sample Efficiency**  
+**M2: Sample Efficiency**
 Total steps to convergence
 
-**M3: Final Performance**  
+**M3: Final Performance**
 Mean reward over last 100 episodes
 
 ### Secondary Metrics (Mechanism Validation)
 
-**M4: Arousal Conflict Rate**  
+**M4: Arousal Conflict Rate**
 Percentage of timesteps with simultaneous high arousal
 
-**M5: Error Attribution**  
+**M5: Error Attribution**
 Correlation between prediction errors and arousal
 
-**M6: Computational Cost**  
+**M6: Computational Cost**
 Training time and inference latency
 
 ---
@@ -382,9 +387,9 @@ Training time and inference latency
 
 ### Computational Resources
 
-**Hardware**: 64GB RAM, RTX 3060 12GB (not needed for Q-learning)  
-**OS**: Pop!_OS Linux  
-**Python**: 3.12+ (using 3.13.3)  
+**Hardware**: 64GB RAM, RTX 3060 12GB (not needed for Q-learning)
+**OS**: Pop!_OS Linux
+**Python**: 3.12+ (using 3.13.3)
 **Package Manager**: uv (fast, modern)
 
 **Estimated Training Time**:
