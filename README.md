@@ -403,7 +403,7 @@ Training time and inference latency
 
 2. **Baker & Cariani (2025)** - "Signal-centric time-domain theory of brain function" - *Frontiers in Computational Neuroscience*
 
-3. **Your PVT Work (2025)** - pvt-inspired-ai validation (30% faster convergence)
+3. **Our PVT Work (2025)** - pvt-inspired-ai validation (30% faster convergence)
 
 ### Documentation Deep Dives
 
